@@ -49,7 +49,7 @@
 
 /*main*/
 
-.main .row {
+.main .row:first-child {
     margin-top: 80px;
 }
 
@@ -67,11 +67,14 @@
 
 .row {
     clear: both;
-    display: block;
 }
 
 
-/*left*/
+/*title*/
+
+.row {
+    position: relative;
+}
 
 .main #left {
     margin-left: 10%;
@@ -85,8 +88,8 @@
 }
 
 .main #design-item {
-    position: relative;
-    top: -150px;
+    position: absolute;
+    top: 130px;
     right: 5%;
 }
 
@@ -94,15 +97,21 @@
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 14px;
-    color: #3C3C3C;
+    color: #FCFCFC;
     text-align: right;
 }
 
 
-/*right*/
+/*picts*/
+
+.main #pict {
+    padding: 0 5% 0 5%;
+    margin: 80px auto 0 auto;
+}
 
 .row {
-    margin: -135px auto;
+    padding: 0 5% 0 5%;
+    margin: 0px auto;
 }
 
 .row .col-6 img {
@@ -117,8 +126,9 @@
 
 .main button {
     float: right;
+    margin-right: 5%;
     margin-top: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 70px;
 }
 
 
@@ -176,9 +186,11 @@
     /* For mobile phones: */
     [class*="col-"] {
         width: 100%;
-        height: 20%;
     }
-    .col-3 {
-        height: 0%;
+    .row .col-6 img {
+        padding: 0 5%;
+    }
+    .row .col-4 img {
+        padding: 0 5%;
     }
 }

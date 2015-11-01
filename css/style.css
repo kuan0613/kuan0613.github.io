@@ -5,11 +5,11 @@
 }
 
 .nav ul {
-    margin: 30px auto;
+    margin: 30px 8px 0 0;
 }
 
 .nav #HKYP {
-    margin: 28px auto;
+    margin: 28px 0 0 -8px;
     padding-left: 8px;
     border-left: 1px #5a5a5a solid;
 }
@@ -54,6 +54,13 @@
     font-family: 'Hammersmith One', sans-serif;
     font-size: 80px;
     color: #fff;
+    -webkit-transition: font-size 2s;
+    /* Safari */
+    transition: font-size 2s;
+}
+
+.main h1:hover {
+    font-size: 88px;
 }
 
 .main a:hover {
