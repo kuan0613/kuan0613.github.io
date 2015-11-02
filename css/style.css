@@ -9,7 +9,7 @@
 }
 
 .nav #HKYP {
-    margin: 28px 0 0 -8px;
+    margin: 28px 0 0 0;
     padding-left: 8px;
     border-left: 1px #5a5a5a solid;
 }
@@ -63,7 +63,7 @@
     font-size: 88px;
 }
 
-.main a:hover {
+* a:hover {
     text-decoration: none;
 }
 
@@ -79,6 +79,26 @@ hr {
     font-size: 18px;
     text-align: center;
     color: #fff;
+}
+
+.main #contact {
+    position: absolute;
+    right: 0px;
+    bottom: 40px;
+}
+
+.main #contact p {
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #fff;
+}
+
+.main #contact a {
+    color: #fff;
+}
+
+.main #contact a:hover {
+    color: #5a5a5a;
 }
 
 
@@ -136,9 +156,19 @@ hr {
     /* For mobile phones: */
     [class*="col-"] {
         width: 100%;
-        height: 20%;
     }
-    .col-3 {
-        height: 0%;
+    .main h1 {
+        font-size: 70px;
+    }
+    .nav .pull-right {
+        width: 100%;
+        text-align: right;
+    }
+    .main {
+        position: relative;
+        top: 30px;
+    }
+    .nav ul {
+        margin: 20px 8px 0 0;
     }
 }

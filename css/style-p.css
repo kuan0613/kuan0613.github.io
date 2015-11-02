@@ -5,11 +5,11 @@
 }
 
 .nav ul {
-    margin: 30px auto;
+    margin: 30px 8px 0 0;
 }
 
 .nav #HKYP {
-    margin: 28px auto;
+    margin: 28px 0 0 0;
     padding-left: 8px;
     border-left: 1px #5a5a5a solid;
 }
@@ -49,10 +49,6 @@
 
 /*main*/
 
-.main .row:first-child {
-    margin-top: 80px;
-}
-
 .main {
     background: url(../image/index-bg_3.jpg);
     background-attachment: fixed;
@@ -65,16 +61,17 @@
 */
 }
 
+.main .row:first-child {
+    margin-top: 80px;
+}
+
 .row {
     clear: both;
+    position: relative;
 }
 
 
 /*title*/
-
-.row {
-    position: relative;
-}
 
 .main #left {
     margin-left: 10%;
@@ -109,11 +106,6 @@
     margin: 80px auto 0 auto;
 }
 
-.row {
-    padding: 0 5% 0 5%;
-    margin: 0px auto;
-}
-
 .row .col-6 img {
     width: 99%;
     margin: 4px 4px 0 4px;
@@ -126,7 +118,6 @@
 
 .main button {
     float: right;
-    margin-right: 5%;
     margin-top: 60px;
     margin-bottom: 70px;
 }
@@ -193,4 +184,18 @@
     .row .col-4 img {
         padding: 0 5%;
     }
+    .nav .pull-right {
+        width: 100%;
+        text-align: right;
+    }
+    .main {
+        position: relative;
+        top: 30px;
+    }
+    .nav ul {
+    margin: 20px 8px 0 0;
+
+}
+
+
 }
