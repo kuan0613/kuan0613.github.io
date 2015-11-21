@@ -75,6 +75,7 @@
 
 .main #left {
     margin-left: 10%;
+    margin-right: 10%;
 }
 
 .main #left h2 {
@@ -87,7 +88,7 @@
 .main #design-item {
     position: absolute;
     top: 130px;
-    right: 5%;
+    right: 10%;
 }
 
 .main #design-item li {
@@ -101,9 +102,9 @@
 
 /*picts*/
 
-.main #pict {
+.main .pict {
     padding: 0 5% 0 5%;
-    margin: 80px auto 0 auto;
+    margin: 80px 0 0 0;
 }
 
 .row .col-6 img {
@@ -120,6 +121,48 @@
     float: right;
     margin-top: 60px;
     margin-bottom: 70px;
+}
+
+
+/** LIGHTBOX MARKUP **/
+
+.lightbox {
+    /** Default lightbox to hidden */
+    display: none;
+    /** Position and style */
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.lightbox img {
+    /** Pad the lightbox image */
+    max-width: 780px;
+    max-height: 580px;
+}
+
+.lightbox:target {
+    /** Remove default browser outline */
+    outline: none;
+    /** Unhide lightbox **/
+    display: block;
+}
+
+
+/*垂直置中偽原素*/
+
+.lightbox::before {
+    content: '';
+    width: 0;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
 }
 
 
@@ -193,9 +236,6 @@
         top: 30px;
     }
     .nav ul {
-    margin: 20px 8px 0 0;
-
-}
-
-
+        margin: 20px 8px 0 0;
+    }
 }

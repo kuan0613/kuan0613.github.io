@@ -1,187 +1,213 @@
-        .nav {
-        background-color: #fff;
-        background-size: cover;
-        height: 70px;
+.nav {
+    background-color: #fff;
+    background-size: cover;
+    height: 70px;
+}
+
+.nav ul {
+    margin: 30px 8px 0 0;
+}
+
+.nav #HKYP {
+    margin: 28px 0 0 0;
+    padding-left: 8px;
+    border-left: 1px #5a5a5a solid;
+}
+
+.nav .pull-left a {
+    color: #5a5a5a;
+    font-size: 18px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav .pull-right a {
+    color: #5a5a5a;
+    font-size: 14px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    padding: 14px 10px;
+    text-decoration: none;
+}
+
+.nav .pull-right .active {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    padding: 14px 10px;
+    color: #E0AD1F;
+}
+
+.nav .pull-right a:hover {
+    color: #BEBEBE;
+}
+
+
+/*main*/
+
+.row {
+    margin-top: 80px;
+    position: relative;
+    clear: both;
+}
+
+.main {
+    background: url(../image/index-bg_2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+[class^="col"] {
+    float: left;
+}
+
+
+/*title*/
+
+.main #left {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.main #left h2 {
+    font-size: 90px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    float: left;
+}
+
+#design-item {
+    position: absolute;
+    top: 92px;
+    right: 10%;
+}
+
+.main #design-item li {
+    text-align: right;
+    line-height: 22px;
+}
+
+.main #design-item .active span {
+    background-color: #E0AD1F;
+    color: #fff;
+}
+
+.main #design-item li a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FCFCFC;
+    text-decoration: none;
+}
+
+.main #design-item li a:hover {
+    color: #5a5a5a;
+}
+
+
+/*picts*/
+
+.main #pictures {
+    margin: 0 auto;
+    padding: 0 20%;
+    text-align: left;
+    color: #3C3C3C;
+}
+
+.main #pictures img {
+    width: 100%;
+}
+
+#pic-list li {
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 60px;
+}
+
+#pic-list li p {
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+.main button {
+    float: right;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+
+/* For desktop: */
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
     }
-    
-    .nav ul {
-        margin: 30px 8px 0 0;
+    .nav .pull-right {
+        width: 100%;
+        text-align: right;
     }
-    
-    .nav #HKYP {
-        margin: 28px 0 0 0;
-        padding-left: 8px;
-        border-left: 1px #5a5a5a solid;
-    }
-    
-    .nav .pull-left a {
-        color: #5a5a5a;
-        font-size: 18px;
-        font-family: 'Roboto Condensed', sans-serif;
-        font-weight: 700;
-        text-decoration: none;
-    }
-    
-    .nav li {
-        display: inline;
-    }
-    
-    .nav .pull-right a {
-        color: #5a5a5a;
-        font-size: 14px;
-        font-family: 'Roboto Condensed', sans-serif;
-        font-weight: 400;
-        padding: 14px 10px;
-        text-decoration: none;
-    }
-    
-    .nav .pull-right .active {
-        font-family: 'Roboto Condensed', sans-serif;
-        font-weight: 400;
-        padding: 14px 10px;
-        color: #E0AD1F;
-    }
-    
-    .nav .pull-right a:hover {
-        color: #BEBEBE;
-    }
-    /*main*/
-    
-    .row {
-        margin-top: 80px;
-        position: relative;
-        clear: both;
-    }
-    
     .main {
-        background: url(../image/index-bg_2.jpg);
-        background-attachment: fixed;
-        background-size: cover;
-    }
-    
-    [class^="col"] {
-        float: left;
-    }
-    /*title*/
-    
-    .main #left {
-        margin-left: 10%;
-    }
-    
-    .main #left h2 {
-        font-size: 90px;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 700;
-        color: #fff;
-    }
-    
-    .main #design-item {
-        position: absolute;
-        top: 205px;
-        right: 10%;
-    }
-    
-    .main #design-item li {
-        font-family: 'Raleway', sans-serif;
-        font-weight: 400;
-        font-size: 14px;
-        color: #FCFCFC;
-    }
-    /*picts*/
-    
-    .main #pictures {
-        margin: 0 auto;
-        padding: 0 20%;
-        text-align: left;
-        color: #3C3C3C;
-    }
-    
-    .main #pictures img {
-        width: 100%;
-    }
-    
-    #pic-list li {
-        margin-bottom: 50px;
-        background-color: rgba(255, 255, 255, 0.5);
-    }
-    
-    #pic-list li p {
         position: relative;
-        top: 5px;
-        left: 5px;
+        top: 30px;
     }
-    
-    .main button {
-        float: right;
-        margin-top: 60px;
-        margin-bottom: 60px;
+    .main #pictures {
+        padding: 0 5%;
     }
-    /* For desktop: */
-    
-    .col-1 {
-        width: 8.33%;
+    .nav ul {
+        margin: 20px 8px 0 0;
     }
-    
-    .col-2 {
-        width: 16.66%;
-    }
-    
-    .col-3 {
-        width: 25%;
-    }
-    
-    .col-4 {
-        width: 33.33%;
-    }
-    
-    .col-5 {
-        width: 41.66%;
-    }
-    
-    .col-6 {
-        width: 50%;
-    }
-    
-    .col-7 {
-        width: 58.33%;
-    }
-    
-    .col-8 {
-        width: 66.66%;
-    }
-    
-    .col-9 {
-        width: 75%;
-    }
-    
-    .col-10 {
-        width: 83.33%;
-    }
-    
-    .col-11 {
-        width: 91.66%;
-    }
-    
-    .col-12 {
-        width: 100%;
-    }
-    
-    @media only screen and (max-width: 767px) {
-        /* For mobile phones: */
-        [class*="col-"] {
-            width: 100%;
-        }
-        .nav .pull-right {
-            width: 100%;
-            text-align: right;
-        }
-        .main {
-            position: relative;
-            top: 30px;
-        }
-        .main #pictures {
-            padding: 0 5%;
-        }
-        .nav ul {
-            margin: 20px 8px 0 0;
-        }
+}

@@ -1,4 +1,4 @@
-    .nav {
+.nav {
     background-color: #fff;
     background-size: cover;
     height: 70px;
@@ -160,3 +160,4 @@
     .nav ul {
         margin: 20px 8px 0 0;
     }
+}

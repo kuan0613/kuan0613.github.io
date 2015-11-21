@@ -1,0 +1,209 @@
+.nav {
+    background-color: #fff;
+    background-size: cover;
+    height: 70px;
+}
+
+.nav ul {
+    margin: 30px 8px 0 0;
+}
+
+.nav #HKYP {
+    margin: 28px 0 0 0;
+    padding-left: 8px;
+    border-left: 1px #5a5a5a solid;
+}
+
+.nav .pull-left a {
+    color: #5a5a5a;
+    font-size: 18px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav .pull-right a {
+    color: #5a5a5a;
+    font-size: 14px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    padding: 14px 10px;
+    text-decoration: none;
+}
+
+.nav .pull-right .active {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    padding: 14px 10px;
+    color: #E0AD1F;
+}
+
+.nav .pull-right a:hover {
+    color: #BEBEBE;
+}
+
+
+/*main*/
+
+.row {
+    margin-top: 80px;
+}
+
+.main {
+    background: url(../image/index-bg_4.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+[class^="col"] {
+    float: left;
+}
+
+
+/*其他文章*/
+
+.main a {
+    text-decoration: none;
+}
+
+.main h2 {
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 30px 5%;
+    background-color: #E0AD1F;
+}
+
+.main #postlist li {
+    margin-left: 5%;
+    line-height: 25px;
+}
+
+.main #postlist li a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FCFCFC;
+}
+
+.main #postlist li a:hover {
+    color: #5a5a5a;
+}
+
+
+/*內容*/
+
+.main #post {
+    background-color: #fff;
+    margin-right: 8%;
+    margin-bottom: 60px;
+    padding: 15px 20px 60px 20px;
+}
+
+.main #post img {
+    width: 100%;
+    margin: 10px 0 10px 0;
+}
+
+.main #btn1 {
+    float: right;
+    margin-right: 8%;
+    margin-bottom: 60px;
+}
+
+.main #btn2 {
+    display: none;
+}
+
+
+/* For desktop: */
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+    .nav .pull-right {
+        width: 100%;
+        text-align: right;
+    }
+    .main {
+        position: relative;
+        top: 30px;
+    }
+    .row {
+        padding: 0 5%;
+    }
+    .nav ul {
+        margin: 20px 8px 0 0;
+    }
+    .main .col-3 {
+        display: none;
+    }
+    .main #post {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .main #btn1 {
+        display: none;
+    }
+    .main #btn2 {
+        display: inherit;
+        float: right;
+        margin-right: 8%;
+        margin-bottom: 60px;
+    }
+}
